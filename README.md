@@ -471,7 +471,7 @@ footer {
 
 <footer>
 
-    © 2026 Nada Hussin · Textile Engineering Graduate
+    © 2026 Nada Hussin · Textile Engineering
 
 </footer>
 
