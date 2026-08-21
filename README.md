@@ -59,6 +59,7 @@ nav a:hover {
     opacity: .55;
 }
 
+
 /* HERO */
 
 .hero {
@@ -73,12 +74,12 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 70px;
+    gap: 80px;
 }
 
 .hero-text {
     flex: 1;
-    max-width: 700px;
+    max-width: 650px;
 }
 
 .small-title {
@@ -98,29 +99,32 @@ h1 {
 }
 
 .hero p {
-    max-width: 620px;
+    max-width: 600px;
     font-size: 18px;
     color: #666;
 }
 
+
 /* PROFILE IMAGE */
 
 .hero-image {
-    width: 390px;
-    height: 500px;
+    width: 400px;
+    height: 520px;
     flex-shrink: 0;
     overflow: hidden;
-    border-radius: 190px 190px 25px 25px;
-    box-shadow: 0 20px 50px rgba(0,0,0,.12);
+    border-radius: 200px 200px 25px 25px;
+    box-shadow: 0 25px 60px rgba(0,0,0,.13);
+    background: #e8e2d8;
 }
 
 .hero-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: center center;
     display: block;
 }
+
 
 /* SECTIONS */
 
@@ -134,6 +138,7 @@ section {
     margin-bottom: 45px;
 }
 
+
 /* ABOUT */
 
 .about {
@@ -146,6 +151,7 @@ section {
     font-size: 18px;
     color: #666;
 }
+
 
 /* SKILLS */
 
@@ -166,6 +172,7 @@ section {
     background: #1d1d1b;
     color: white;
 }
+
 
 /* PORTFOLIO */
 
@@ -198,6 +205,7 @@ section {
     transform: translateY(-3px);
     background: #555;
 }
+
 
 /* CONTACT */
 
@@ -247,6 +255,7 @@ section {
     color: white;
 }
 
+
 /* FOOTER */
 
 footer {
@@ -256,6 +265,7 @@ footer {
     font-size: 12px;
     border-top: 1px solid #444;
 }
+
 
 /* MOBILE */
 
@@ -306,6 +316,7 @@ footer {
     .section-title {
         font-size: 40px;
     }
+
 }
 
 </style>
@@ -339,6 +350,7 @@ footer {
 
     <div class="hero-layout">
 
+
         <div class="hero-text">
 
             <div class="small-title">
@@ -364,11 +376,12 @@ footer {
         <div class="hero-image">
 
             <img
-                src="ChatGPT Image Aug 21, 2026, 10_21_21 PM.png"
+                src="profile.png"
                 alt="Nada Hussin"
             >
 
         </div>
+
 
     </div>
 
@@ -487,6 +500,7 @@ footer {
 
     <div class="contact-content">
 
+
         <div class="contact-intro">
 
             I am open to new opportunities, collaborations,
@@ -497,37 +511,51 @@ footer {
 
         <div class="contact-info">
 
+
             <div class="contact-item">
+
                 <strong>Email</strong><br>
+
                 <a href="mailto:nhussin442@gmail.com">
                     nhussin442@gmail.com
                 </a>
+
             </div>
 
 
             <div class="contact-item">
+
                 <strong>Phone</strong><br>
+
                 <a href="tel:01095578083">
                     01095578083
                 </a>
+
             </div>
 
 
             <div class="contact-item">
+
                 <strong>LinkedIn</strong><br>
+
                 <a
                     href="https://www.linkedin.com/in/nada-hussin-7693862a0"
                     target="_blank"
                 >
                     linkedin.com/in/nada-hussin-7693862a0
                 </a>
+
             </div>
 
 
             <div class="contact-item">
+
                 <strong>Location</strong><br>
+
                 Gesr El Suez, El Haykstep, Cairo, Egypt
+
             </div>
+
 
         </div>
 
