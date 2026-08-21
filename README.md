@@ -7,6 +7,7 @@
 <title>Nada Hussin | Textile Engineering</title>
 
 <style>
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap');
 
 * {
@@ -91,8 +92,9 @@ h1 {
     max-width: 650px;
     font-size: 18px;
     color: #666;
-    margin-bottom: 40px;
 }
+
+/* BUTTON */
 
 .button {
     display: inline-block;
@@ -176,14 +178,36 @@ section {
     color: white;
 }
 
-.contact p {
-    color: #bbb;
-    max-width: 600px;
-    margin-bottom: 30px;
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
 }
 
-.contact a {
+.contact-intro {
+    color: #bbb;
+    font-size: 18px;
+    max-width: 500px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact-item {
+    color: #ddd;
+    font-size: 15px;
+}
+
+.contact-item a {
     color: white;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    opacity: .6;
 }
 
 /* FOOTER */
@@ -217,6 +241,11 @@ footer {
         gap: 35px;
     }
 
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
     section {
         padding: 80px 7%;
     }
@@ -225,10 +254,12 @@ footer {
         font-size: 40px;
     }
 }
+
 </style>
 </head>
 
 <body>
+
 
 <!-- NAVIGATION -->
 
@@ -269,14 +300,6 @@ footer {
             Combining technical textile knowledge with modern
             visual design to create innovative and functional ideas.
         </p>
-
-        <a
-            class="button"
-            href="https://drive.google.com/file/d/1zQh8uhki6JQjfAGkhOvf1gMZtmOE_b1t/view?usp=sharing"
-            target="_blank"
-        >
-            VIEW FULL PORTFOLIO →
-        </a>
 
     </div>
 
@@ -369,7 +392,7 @@ footer {
 
         <p>
             Explore my complete portfolio, including my academic work,
-            textile designs, creative projects and graduation project.
+            textile projects, creative work and graduation project.
         </p>
 
         <a
@@ -377,7 +400,7 @@ footer {
             href="https://drive.google.com/file/d/1zQh8uhki6JQjfAGkhOvf1gMZtmOE_b1t/view?usp=sharing"
             target="_blank"
         >
-            OPEN PORTFOLIO PDF →
+            VIEW FULL PORTFOLIO →
         </a>
 
     </div>
@@ -390,21 +413,56 @@ footer {
 <section id="contact" class="contact">
 
     <div class="section-title">
-        Let's Work Together
+        Contact Me
     </div>
 
-    <p>
-        Interested in textile engineering, textile printing,
-        product development or creative collaborations?
-        Feel free to get in touch.
-    </p>
+    <div class="contact-content">
 
-    <a
-        class="button"
-        href="mailto:YOUR-EMAIL@gmail.com"
-    >
-        CONTACT ME →
-    </a>
+        <div class="contact-intro">
+
+            I am open to new opportunities, collaborations,
+            internships and creative projects in the textile field.
+
+        </div>
+
+
+        <div class="contact-info">
+
+            <div class="contact-item">
+                <strong>Email</strong><br>
+                <a href="mailto:nhussin442@gmail.com">
+                    nhussin442@gmail.com
+                </a>
+            </div>
+
+
+            <div class="contact-item">
+                <strong>Phone</strong><br>
+                <a href="tel:01095578083">
+                    01095578083
+                </a>
+            </div>
+
+
+            <div class="contact-item">
+                <strong>LinkedIn</strong><br>
+                <a
+                    href="https://www.linkedin.com/in/nada-hussin-7693862a0"
+                    target="_blank"
+                >
+                    linkedin.com/in/nada-hussin-7693862a0
+                </a>
+            </div>
+
+
+            <div class="contact-item">
+                <strong>Location</strong><br>
+                Gesr El Suez, El Haykstep, Cairo, Egypt
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
@@ -416,6 +474,7 @@ footer {
     © 2026 Nada Hussin · Textile Engineering Graduate
 
 </footer>
+
 
 </body>
 </html>
