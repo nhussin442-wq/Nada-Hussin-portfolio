@@ -38,7 +38,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(247,245,241,.92);
+    background: rgba(247,245,241,.94);
     backdrop-filter: blur(12px);
 }
 
@@ -63,13 +63,22 @@ nav a:hover {
 
 .hero {
     min-height: 100vh;
-    padding: 150px 7% 80px;
+    padding: 130px 7% 80px;
     display: flex;
     align-items: center;
 }
 
-.hero-content {
-    max-width: 900px;
+.hero-layout {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 700px;
 }
 
 .small-title {
@@ -82,34 +91,35 @@ nav a:hover {
 
 h1 {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(55px, 9vw, 120px);
-    line-height: .95;
+    font-size: clamp(55px, 8vw, 110px);
+    line-height: .92;
     font-weight: 500;
     margin-bottom: 35px;
 }
 
 .hero p {
-    max-width: 650px;
+    max-width: 620px;
     font-size: 18px;
     color: #666;
 }
 
-/* BUTTON */
+/* PROFILE IMAGE */
 
-.button {
-    display: inline-block;
-    padding: 15px 30px;
-    background: #1d1d1b;
-    color: white;
-    text-decoration: none;
-    font-size: 13px;
-    letter-spacing: 1px;
-    transition: .3s;
+.hero-image {
+    width: 390px;
+    height: 500px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 190px 190px 25px 25px;
+    box-shadow: 0 20px 50px rgba(0,0,0,.12);
 }
 
-.button:hover {
-    transform: translateY(-3px);
-    background: #555;
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
 }
 
 /* SECTIONS */
@@ -149,6 +159,12 @@ section {
     border: 1px solid #bbb;
     padding: 12px 20px;
     font-size: 13px;
+    transition: .3s;
+}
+
+.skill:hover {
+    background: #1d1d1b;
+    color: white;
 }
 
 /* PORTFOLIO */
@@ -165,6 +181,22 @@ section {
     color: #666;
     font-size: 18px;
     margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #1d1d1b;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    background: #555;
 }
 
 /* CONTACT */
@@ -193,7 +225,7 @@ section {
 .contact-info {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 22px;
 }
 
 .contact-item {
@@ -201,13 +233,18 @@ section {
     font-size: 15px;
 }
 
-.contact-item a {
+.contact-item strong {
     color: white;
+    font-weight: 500;
+}
+
+.contact-item a {
+    color: #ddd;
     text-decoration: none;
 }
 
 .contact-item a:hover {
-    opacity: .6;
+    color: white;
 }
 
 /* FOOTER */
@@ -222,7 +259,7 @@ footer {
 
 /* MOBILE */
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
 
     nav {
         padding: 18px 5%;
@@ -233,7 +270,23 @@ footer {
     }
 
     .hero {
-        padding: 130px 7% 70px;
+        padding: 120px 7% 70px;
+    }
+
+    .hero-layout {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 45px;
+    }
+
+    .hero-image {
+        width: 280px;
+        height: 360px;
+        align-self: center;
+    }
+
+    h1 {
+        font-size: 65px;
     }
 
     .about {
@@ -257,6 +310,7 @@ footer {
 
 </style>
 </head>
+
 
 <body>
 
@@ -283,23 +337,38 @@ footer {
 
 <section class="hero">
 
-    <div class="hero-content">
+    <div class="hero-layout">
 
-        <div class="small-title">
-            Textile Engineering · Creative Design
+        <div class="hero-text">
+
+            <div class="small-title">
+                Textile Engineering · Creative Design
+            </div>
+
+            <h1>
+                Nada<br>
+                Hussin
+            </h1>
+
+            <p>
+                Textile Engineering graduate with a passion for
+                textile printing, creative design and product
+                development. Combining technical textile knowledge
+                with modern visual design to create innovative
+                and functional ideas.
+            </p>
+
         </div>
 
-        <h1>
-            Nada<br>
-            Hussin
-        </h1>
 
-        <p>
-            Textile Engineering graduate with a passion for textile
-            printing, creative design and product development.
-            Combining technical textile knowledge with modern
-            visual design to create innovative and functional ideas.
-        </p>
+        <div class="hero-image">
+
+            <img
+                src="ChatGPT Image Aug 21, 2026, 10_21_21 PM.png"
+                alt="Nada Hussin"
+            >
+
+        </div>
 
     </div>
 
@@ -471,7 +540,7 @@ footer {
 
 <footer>
 
-    © 2026 Nada Hussin · Textile Engineering
+    © 2026 Nada Hussin · Textile Engineering 
 
 </footer>
 
