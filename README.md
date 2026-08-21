@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Nada Hussein | Textile & Surface Designer</title>
+<title>Nada Hussin | Textile Engineering</title>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap');
@@ -26,6 +26,8 @@ body {
     line-height: 1.6;
 }
 
+/* NAVIGATION */
+
 nav {
     position: fixed;
     top: 0;
@@ -35,7 +37,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(247,245,241,.9);
+    background: rgba(247,245,241,.92);
     backdrop-filter: blur(12px);
 }
 
@@ -52,6 +54,12 @@ nav a {
     font-size: 14px;
 }
 
+nav a:hover {
+    opacity: .55;
+}
+
+/* HERO */
+
 .hero {
     min-height: 100vh;
     padding: 150px 7% 80px;
@@ -60,7 +68,7 @@ nav a {
 }
 
 .hero-content {
-    max-width: 850px;
+    max-width: 900px;
 }
 
 .small-title {
@@ -80,7 +88,7 @@ h1 {
 }
 
 .hero p {
-    max-width: 600px;
+    max-width: 650px;
     font-size: 18px;
     color: #666;
     margin-bottom: 40px;
@@ -102,6 +110,8 @@ h1 {
     background: #555;
 }
 
+/* SECTIONS */
+
 section {
     padding: 110px 7%;
 }
@@ -111,6 +121,8 @@ section {
     font-size: 52px;
     margin-bottom: 45px;
 }
+
+/* ABOUT */
 
 .about {
     display: grid;
@@ -123,6 +135,8 @@ section {
     font-size: 18px;
     color: #666;
 }
+
+/* PROJECTS */
 
 .projects {
     display: grid;
@@ -168,6 +182,8 @@ section {
     font-size: 30px;
 }
 
+/* SKILLS */
+
 .skills {
     display: flex;
     flex-wrap: wrap;
@@ -179,6 +195,8 @@ section {
     padding: 12px 20px;
     font-size: 13px;
 }
+
+/* CONTACT */
 
 .contact {
     background: #1d1d1b;
@@ -199,6 +217,8 @@ section {
     color: white;
 }
 
+/* FOOTER */
+
 footer {
     background: #1d1d1b;
     color: #888;
@@ -206,6 +226,8 @@ footer {
     font-size: 12px;
     border-top: 1px solid #444;
 }
+
+/* MOBILE */
 
 @media (max-width: 700px) {
 
@@ -243,8 +265,13 @@ footer {
 
 <body>
 
+<!-- NAVIGATION -->
+
 <nav>
-    <div class="logo">NH.</div>
+
+    <div class="logo">
+        NH.
+    </div>
 
     <div>
         <a href="#about">About</a>
@@ -252,38 +279,46 @@ footer {
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
     </div>
+
 </nav>
 
+
+<!-- HERO -->
 
 <section class="hero">
 
     <div class="hero-content">
 
         <div class="small-title">
-            Textile Printing · Surface Design · Creative Design
+            Textile Engineering · Creative Design
         </div>
 
         <h1>
             Nada<br>
-            Hussein
+            Hussin
         </h1>
 
         <p>
-            Textile Printing & Surface Designer creating contemporary
-            patterns, prints and textile-based visual experiences inspired
-            by culture, nature and modern aesthetics.
+            Textile Engineering graduate with a passion for textile
+            printing, creative design and product development.
+            Combining technical textile knowledge with modern
+            visual design to create innovative and functional ideas.
         </p>
 
-        <a class="button"
-           href="https://drive.google.com/file/d/1zQh8uhki6JQjfAGkhOvf1gMZtmOE_b1t/view?usp=sharing"
-           target="_blank">
-           VIEW FULL PORTFOLIO →
+        <a
+            class="button"
+            href="https://drive.google.com/file/d/1zQh8uhki6JQjfAGkhOvf1gMZtmOE_b1t/view?usp=sharing"
+            target="_blank"
+        >
+            VIEW FULL PORTFOLIO →
         </a>
 
     </div>
 
 </section>
 
+
+<!-- ABOUT -->
 
 <section id="about">
 
@@ -294,21 +329,23 @@ footer {
     <div class="about">
 
         <p>
-            I am a fresh graduate specialized in Textile Printing,
-            Dyeing and Finishing, with a strong interest in surface design,
-            textile patterns and creative product development.
+            I am a fresh graduate specialized in Textile Engineering,
+            with an academic background in textile printing, dyeing
+            and finishing.
         </p>
 
         <p>
-            My work combines textile knowledge with digital design tools
-            to create visually distinctive patterns and applications
-            for fashion, interiors and lifestyle products.
+            I am interested in combining textile technology,
+            creative design and product development to create
+            innovative textile applications.
         </p>
 
     </div>
 
 </section>
 
+
+<!-- PROJECTS -->
 
 <section id="projects">
 
@@ -319,29 +356,54 @@ footer {
     <div class="projects">
 
         <div class="project">
-            <span>01 · Textile Design</span>
-            <h3>Surface Patterns</h3>
+
+            <span>01 · Textile</span>
+
+            <h3>
+                Textile Printing
+            </h3>
+
         </div>
 
+
         <div class="project">
+
             <span>02 · Home Textile</span>
-            <h3>Rugs & Wall Hangings</h3>
+
+            <h3>
+                Rugs & Wall Hangings
+            </h3>
+
         </div>
 
+
         <div class="project">
+
             <span>03 · Product Design</span>
-            <h3>Beach Collection</h3>
+
+            <h3>
+                Beach Collection
+            </h3>
+
         </div>
 
+
         <div class="project">
-            <span>04 · Creative Project</span>
-            <h3>Egyptian Identity</h3>
+
+            <span>04 · Graduation Project</span>
+
+            <h3>
+                Egyptian Identity
+            </h3>
+
         </div>
 
     </div>
 
 </section>
 
+
+<!-- SKILLS -->
 
 <section id="skills">
 
@@ -351,19 +413,44 @@ footer {
 
     <div class="skills">
 
-        <div class="skill">Textile Printing</div>
-        <div class="skill">Surface Design</div>
-        <div class="skill">Pattern Design</div>
-        <div class="skill">Adobe Photoshop</div>
-        <div class="skill">Adobe Illustrator</div>
-        <div class="skill">Canva</div>
-        <div class="skill">Textile Design</div>
-        <div class="skill">Creative Direction</div>
+        <div class="skill">
+            Textile Printing
+        </div>
+
+        <div class="skill">
+            Dyeing & Finishing
+        </div>
+
+        <div class="skill">
+            Textile Engineering
+        </div>
+
+        <div class="skill">
+            Adobe Photoshop
+        </div>
+
+        <div class="skill">
+            Adobe Illustrator
+        </div>
+
+        <div class="skill">
+            Canva
+        </div>
+
+        <div class="skill">
+            Product Design
+        </div>
+
+        <div class="skill">
+            Creative Design
+        </div>
 
     </div>
 
 </section>
 
+
+<!-- CONTACT -->
 
 <section id="contact" class="contact">
 
@@ -372,20 +459,29 @@ footer {
     </div>
 
     <p>
-        Interested in textile design, surface patterns or creative
-        collaborations? Feel free to get in touch.
+        Interested in textile engineering, textile printing,
+        product development or creative collaborations?
+        Feel free to get in touch.
     </p>
 
-    <a class="button" href="mailto:YOUR-EMAIL@gmail.com">
+    <a
+        class="button"
+        href="mailto:YOUR-EMAIL@gmail.com"
+    >
         CONTACT ME →
     </a>
 
 </section>
 
 
+<!-- FOOTER -->
+
 <footer>
-    © 2026 Nada Hussein · Textile & Surface Designer
+
+    © 2026 Nada Hussin · Textile Engineering Graduate
+
 </footer>
+
 
 </body>
 </html>
