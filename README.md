@@ -128,58 +128,11 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
-    align-items: start;
 }
 
 .about p {
     font-size: 18px;
     color: #666;
-}
-
-/* PROJECTS */
-
-.projects {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 22px;
-}
-
-.project {
-    min-height: 330px;
-    padding: 35px;
-    background: #e8e2d8;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    transition: .3s;
-}
-
-.project:nth-child(2) {
-    background: #d9d6cc;
-}
-
-.project:nth-child(3) {
-    background: #ded1c4;
-}
-
-.project:nth-child(4) {
-    background: #cfcfc7;
-}
-
-.project:hover {
-    transform: translateY(-7px);
-}
-
-.project span {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 11px;
-    margin-bottom: 10px;
-}
-
-.project h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 30px;
 }
 
 /* SKILLS */
@@ -194,6 +147,22 @@ section {
     border: 1px solid #bbb;
     padding: 12px 20px;
     font-size: 13px;
+}
+
+/* PORTFOLIO */
+
+.portfolio {
+    background: #e8e2d8;
+}
+
+.portfolio-box {
+    max-width: 850px;
+}
+
+.portfolio p {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 30px;
 }
 
 /* CONTACT */
@@ -248,10 +217,6 @@ footer {
         gap: 35px;
     }
 
-    .projects {
-        grid-template-columns: 1fr;
-    }
-
     section {
         padding: 80px 7%;
     }
@@ -275,8 +240,8 @@ footer {
 
     <div>
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
     </div>
 
@@ -345,64 +310,6 @@ footer {
 </section>
 
 
-<!-- PROJECTS -->
-
-<section id="projects">
-
-    <div class="section-title">
-        Selected Projects
-    </div>
-
-    <div class="projects">
-
-        <div class="project">
-
-            <span>01 · Textile</span>
-
-            <h3>
-                Textile Printing
-            </h3>
-
-        </div>
-
-
-        <div class="project">
-
-            <span>02 · Home Textile</span>
-
-            <h3>
-                Rugs & Wall Hangings
-            </h3>
-
-        </div>
-
-
-        <div class="project">
-
-            <span>03 · Product Design</span>
-
-            <h3>
-                Beach Collection
-            </h3>
-
-        </div>
-
-
-        <div class="project">
-
-            <span>04 · Graduation Project</span>
-
-            <h3>
-                Egyptian Identity
-            </h3>
-
-        </div>
-
-    </div>
-
-</section>
-
-
 <!-- SKILLS -->
 
 <section id="skills">
@@ -450,6 +357,34 @@ footer {
 </section>
 
 
+<!-- PORTFOLIO -->
+
+<section id="portfolio" class="portfolio">
+
+    <div class="portfolio-box">
+
+        <div class="section-title">
+            Portfolio
+        </div>
+
+        <p>
+            Explore my complete portfolio, including my academic work,
+            textile designs, creative projects and graduation project.
+        </p>
+
+        <a
+            class="button"
+            href="https://drive.google.com/file/d/1zQh8uhki6JQjfAGkhOvf1gMZtmOE_b1t/view?usp=sharing"
+            target="_blank"
+        >
+            OPEN PORTFOLIO PDF →
+        </a>
+
+    </div>
+
+</section>
+
+
 <!-- CONTACT -->
 
 <section id="contact" class="contact">
@@ -481,7 +416,6 @@ footer {
     © 2026 Nada Hussin · Textile Engineering Graduate
 
 </footer>
-
 
 </body>
 </html>
